@@ -103,8 +103,13 @@ function upload(file) {
   const options = header()
   return new Promise((resolve, reject) => {
     const req = https.request(options, res => res.on('data', data => {
-      const obj = JSON.parse(data.toString());
-			obj.error ? reject(obj.message) : resolve(obj);
+      let obj
+      try {
+        obj = JSON.parse(data.toString());
+        obj.error ? reject(obj.message) : resolve(obj);
+      } catch (error) {
+        resolve({})
+      }
 		}));
     req.on('error', error => {
       Error('upload', file)
