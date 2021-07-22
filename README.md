@@ -4,6 +4,11 @@
 
 **该项目是用来学习使用的，主要为了减少工作中重复的图片压缩操作，不做商业化使用。因此，如果要商用，请购买正版服务[tinypng](https://tinypng.com/developers)**
 
+## 开发环境
+
+- Node.js 14.17.0
+- npm 6.14.13
+
 ## Install
 
 ```javascript
@@ -37,4 +42,4 @@
 
 ## Examples
 
-使用方式可以查看`examples/app`这个项目
+使用方式可以查看[examples/app](https://github.com/xccjk/squash-cli/tree/master/examples/app)这个项目
