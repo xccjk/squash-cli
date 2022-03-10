@@ -1,6 +1,6 @@
 {
   "name": "img-squash-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "基于tinify的图片压缩cli工具",
   "main": "bin/index.js",
   "author": "1025886304@qq.com",
@@ -12,6 +12,10 @@
     "chalk": "^4.1.1",
     "md5": "^2.3.0",
     "minimist": "^1.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xccjk/squash-cli"
   },
   "keywords": ["tinify", "squash"],
   "files": ["/bin", ".editorconfig", "README.md", "package.json", "yarn.lock"]
