@@ -56,7 +56,7 @@ const squashList = []
 // 请求头
 function header() {
 	const ip = new Array(4).fill(0).map(() => parseInt(Math.random() * 255)).join(".");
-	const index = Math.round(Math.random(0, 1));
+  const index = Math.round(Math.random(0, 1));
 	return {
 		headers: {
 			"Cache-Control": "no-cache",
@@ -67,7 +67,7 @@ function header() {
 		},
 		hostname: urls[index],
 		method: "POST",
-		path: "/web/shrink",
+		path: "/backend/opt/shrink",
 		rejectUnauthorized: false
 	};
 }
